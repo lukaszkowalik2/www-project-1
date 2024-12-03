@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porady - Ryby i Akwarystyka</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="bg-primary text-white text-center py-3">
+      <h1>Ryby i Akwarystyka</h1>
+      <p>Twoje źródło wiedzy o rybach i akwarystyce!</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ryby</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#species">Popularne Gatunki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="tips.html">Porady</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Podstawy akwarystyki</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title">Zakładanie akwarium</h3>
+                <ol class="card-text">
+                  <li>Wybierz odpowiednie miejsce (z dala od słońca i źródeł ciepła)</li>
+                  <li>Przygotuj podłoże (żwir lub piasek akwariowy)</li>
+                  <li>Zainstaluj filtry i grzałkę</li>
+                  <li>Dodaj dekoracje i rośliny</li>
+                  <li>Napełnij wodą i włącz sprzęt</li>
+                  <li>Poczekaj 2-3 tygodnie na dojrzenie akwarium</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title">Codzienna pielęgnacja</h3>
+                <ul class="card-text">
+                  <li>Kontroluj temperaturę wody (codziennie)</li>
+                  <li>Karm ryby odpowiednimi porcjami (1-2 razy dziennie)</li>
+                  <li>Sprawdzaj pracę filtra i innych urządzeń</li>
+                  <li>Obserwuj zachowanie ryb</li>
+                  <li>Usuwaj resztki pokarmu i obumarłe części roślin</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Harmonogram prac akwarystycznych</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th>Częstotliwość</th>
+                <th>Czynność</th>
+                <th>Uwagi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Codziennie</td>
+                <td>Karmienie ryb, kontrola temperatury</td>
+                <td>Nie przekarmiaj ryb</td>
+              </tr>
+              <tr>
+                <td>Co tydzień</td>
+                <td>Podmiana 10-15% wody</td>
+                <td>Używaj uzdatniacza do wody</td>
+              </tr>
+              <tr>
+                <td>Co miesiąc</td>
+                <td>Czyszczenie filtra, przycinanie roślin</td>
+                <td>Nie myj wkładów filtracyjnych wodą z kranu</td>
+              </tr>
+              <tr>
+                <td>Co kwartał</td>
+                <td>Wymiana wkładów filtracyjnych</td>
+                <td>Wymieniaj tylko część wkładów</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Porady zaawansowane</h2>
+        <div class="accordion" id="advancedTips">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">Nawożenie roślin akwariowych</button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#advancedTips">
+              <div class="card-body">
+                <p>Prawidłowe nawożenie roślin akwariowych wymaga:</p>
+                <ul>
+                  <li>Makroelementów (NPK)</li>
+                  <li>Mikroelementów (Fe, Mn, Cu, etc.)</li>
+                  <li>CO2 (naturalne lub sztuczne)</li>
+                  <li>Odpowiedniego oświetlenia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center bg-light py-3">
+      <p>&copy; 2024 Ryby i Akwarystyka. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
