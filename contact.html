@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria - Ryby i Akwarystyka</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <header class="bg-primary text-white text-center py-3">
+      <h1>Ryby i Akwarystyka</h1>
+      <p>Twoje źródło wiedzy o rybach i akwarystyce!</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ryby</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#species">Popularne Gatunki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <section id="contact">
+            <h2>Skontaktuj się z nami</h2>
+            <p class="mb-4">Masz pytania dotyczące hodowli ryb? Chcesz się podzielić swoimi doświadczeniami? Napisz do nas!</p>
+
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label for="name">Imię i nazwisko*</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="topic">Temat</label>
+                <select class="form-control" id="topic">
+                  <option>Pytanie ogólne</option>
+                  <option>Porada hodowlana</option>
+                  <option>Zgłoszenie błędu na stronie</option>
+                  <option>Współpraca</option>
+                  <option>Inne</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Wiadomość*</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="agreement" required />
+                <label class="form-check-label" for="agreement">Wyrażam zgodę na przetwarzanie moich danych osobowych*</label>
+              </div>
+              <button type="submit" class="btn btn-primary" id="submitBtn">Wyślij wiadomość</button>
+              <div id="submitStatus" class="mt-3"></div>
+            </form>
+          </section>
+        </div>
+
+        <div class="col-md-6">
+          <section id="contact-info" class="mt-4 mt-md-0">
+            <h2>Dane kontaktowe</h2>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Biuro obsługi klienta</h5>
+                <p class="card-text">
+                  <strong>Telefon:</strong> +48 123 456 789<br />
+                  <strong>Email:</strong> kontakt@rybyiakwarystyka.pl<br />
+                  <strong>Godziny pracy:</strong> Pon-Pt 9:00-17:00
+                </p>
+              </div>
+            </div>
+
+            <h3>Najczęściej zadawane pytania</h3>
+            <div class="accordion" id="faqAccordion">
+              <div class="card">
+                <div class="card-header" id="faqOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">Jak często karmić ryby?</button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#faqAccordion">
+                  <div class="card-body">Ryby należy karmić 1-2 razy dziennie, w ilościach które są w stanie zjeść w ciągu 2-3 minut.</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo">Jak często wymieniać wodę?</button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+                  <div class="card-body">Zaleca się wymianę 10-15% wody co tydzień lub 20-25% co dwa tygodnie.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center bg-light py-3">
+      <p>&copy; 2024 Ryby i Akwarystyka. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

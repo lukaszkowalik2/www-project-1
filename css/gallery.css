@@ -1,0 +1,29 @@
+.dragover {
+  border: 2px dashed #007bff;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-inner {
+  max-height: 500px;
+}
+
+.carousel-item {
+  height: 500px;
+  background-color: #000;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  width: auto;
+}

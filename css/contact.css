@@ -1,0 +1,16 @@
+.btn-link {
+  color: #007bff;
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+}
+.btn-link:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+.card-header {
+  background-color: #f8f9fa;
+}
+#submitStatus {
+  transition: all 0.3s ease;
+}

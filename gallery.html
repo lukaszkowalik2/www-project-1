@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria - Ryby i Akwarystyka</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <header class="bg-primary text-white text-center py-3">
+      <h1>Ryby i Akwarystyka</h1>
+      <p>Twoje źródło wiedzy o rybach i akwarystyce!</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ryby</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#species">Popularne Gatunki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-4">
+      <h2>Galeria zdjęć</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/bojownik.webp" alt="Bojownik wspaniały" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/brzanka.webp" alt="Brzanka Sumatrzańska" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/dorsz.webp" alt="Dorsz" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/glonojad.webp" alt="Glonojad" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/gupik.webp" alt="Gupik" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/karp.webp" alt="Karp" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/losos.webp" alt="Łosoś" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/molinezja.webp" alt="Molinezja" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/neon.webp" alt="Neon Innesa" />
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Poprzedni</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Następny</span>
+        </a>
+      </div>
+
+      <section class="row my-5">
+        <div class="col-md-6">
+          <h3>Popularne gatunki akwariowe</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5>Bojownik wspaniały</h5>
+              <p class="mb-1">Znany z pięknych, długich płetw i intensywnych kolorów. Wymaga osobnego zbiornika.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5>Neon Innesa</h5>
+              <p class="mb-1">Niewielka, spokojna ryba ławicowa o charakterystycznym niebieskim pasku.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <h5>Gupik</h5>
+              <p class="mb-1">Łatwa w hodowli ryba, idealna dla początkujących akwarystów.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h3>Wskazówki fotograficzne</h3>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Jak fotografować ryby?</h5>
+              <ul class="list-unstyled">
+                <li>✓ Używaj szybkich czasów migawki</li>
+                <li>✓ Unikaj używania lampy błyskowej</li>
+                <li>✓ Fotografuj pod odpowiednim kątem</li>
+                <li>✓ Zachowaj cierpliwość</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h3 class="text-center mb-4">Kategorie zdjęć</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Ryby słodkowodne</h5>
+                <p class="card-text">Odkryj różnorodność ryb żyjących w wodach słodkich.</p>
+                <button class="btn btn-primary">Zobacz więcej</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Ryby morskie</h5>
+                <p class="card-text">Zobacz piękno mieszkańców mórz i oceanów.</p>
+                <button class="btn btn-primary">Zobacz więcej</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Aranżacje akwariów</h5>
+                <p class="card-text">Zainspiruj się pięknymi aranżacjami akwariów.</p>
+                <button class="btn btn-primary">Zobacz więcej</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h3 class="text-center mb-4">Podziel się swoimi zdjęciami</h3>
+        <div class="card">
+          <div class="card-body">
+            <form id="photoForm" onsubmit="addPhotoToCarousel(event)">
+              <div class="form-group">
+                <label for="photoTitle">Tytuł zdjęcia</label>
+                <input type="text" class="form-control" id="photoTitle" required />
+              </div>
+              <div class="form-group">
+                <label for="photoDescription">Opis</label>
+                <textarea class="form-control" id="photoDescription" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="photoFile">Wybierz zdjęcie</label>
+                <input type="file" class="form-control-file" id="photoFile" accept="image/*" required />
+              </div>
+              <button type="submit" class="btn btn-primary">Wyślij</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center bg-light py-3 mt-auto">
+      <p>&copy; 2024 Ryby i Akwarystyka. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
